@@ -1,8 +1,8 @@
 # react-redux-datatable
 
 ##Props
-`refetch`
-Accepts a unique key. The DataTable component will check for this prop and if the value changes will force a re-fetch of data using the `fetchFunction`.
+```refetch```
+Accepts a unique key. The DataTable component will check for this prop and if the value changes it will force a re-fetch of data.
 
 ##Helper Functions
 ### guid()
