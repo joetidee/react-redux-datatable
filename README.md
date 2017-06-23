@@ -21,10 +21,10 @@ Simply add a `dataTables` Object to the root of your store, e.g. `dataTables: {}
 * loading **_(Boolean)_**: Indicates if the table data is in the process of being loaded.
 * sortingEnabled: **_(Boolean)_**: Indicates if column sorting is enabled on the table.
 * queryParams: **_(Object)_**: Contains properties used by the `dataFetchFunction` function. Namely:
-..* searchParams **_(Object)_**
-..* sortParam: **_(Object)_**
-..* skip: **_(Integer)_**
-..* limit: **_(Integer)_**
+ * searchParams **_(Object)_**
+ * sortParam: **_(Object)_**
+ * skip: **_(Integer)_**
+ * limit: **_(Integer)_**
     
 * searchParamsDict **_(Object)_**: 
 * searchTerm **_(String)_**: 
