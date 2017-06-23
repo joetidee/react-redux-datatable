@@ -35,6 +35,11 @@ Provides information about how the table should be sorted when it is initially r
 ```dataFetchFunction``` **_(Function)_**
 A function that will fetch data to pass to the Data Table. Must return a Promise.
 
+```renderRow``` **_(Function)_**
+A function that will process each row of data returned by the `dataFetchFunction`. The `renderRow` function will be supplied with an Object that will represent the row data and should return an Object:
+* attr **_(Object)_**: Each property within this object will be applied to the row as an attribute of the `<tr>` element.
+* data **_(Array)_**: An array, where each element represents the content of the column within the row.
+
 ```tableClass``` **_(String)_**
 A CSS class name that will be added to the rendered table.
 
