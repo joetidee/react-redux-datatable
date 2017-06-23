@@ -19,8 +19,8 @@ let MyTable = DataTableWrapper("someUniqueName");
 
 Simply add a `dataTables` Object to the root of your store, e.g. `dataTables: {}`. This object contains the following properties:
 * loading **_(Boolean)_**: Indicates if the table data is in the process of being loaded.
-* sortingEnabled: **_(Boolean)_**: Indicates if column sorting is enabled on the table.
-* queryParams: **_(Object)_**: Contains properties used by the `dataFetchFunction` function. Namely:
+* sortingEnabled **_(Boolean)_**: Indicates if column sorting is enabled on the table.
+* queryParams **_(Object)_**: Contains properties used by the `dataFetchFunction` function. Namely:
   * searchParams **_(Object)_**
   * sortParam: **_(Object)_**
   * skip: **_(Integer)_**
@@ -29,7 +29,7 @@ Simply add a `dataTables` Object to the root of your store, e.g. `dataTables: {}
 * searchParamsDict **_(Object)_**: 
 * searchTerm **_(String)_**: 
 * pageSizeList **_(Array)_**: An array of values that the user of the datatable can select to adjust the page size. Default is `[50,200,500]`.
-* dataFetchTriggerKey: **_(String)_**: Changing the value of this key will force a re-fetch of the data in the table.
+* dataFetchTriggerKey **_(String)_**: Changing the value of this key will force a re-fetch of the data in the table.
 * data **_(Array)_**: An array of objects representing the data to be insterted into the table.
 
 
