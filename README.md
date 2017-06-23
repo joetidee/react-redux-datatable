@@ -16,7 +16,7 @@ let MyTable = DataTableWrapper("someUniqueName");
 ## Props
 
 ```defaultColumnSorting``` **_{Object}_**
-Provides information about how the table should be sorted when it is initially rendered. Options:
+Provides information about how the table should be sorted when it is initially rendered.
 * index {Interger}: A zero-based index of the column number.
 * field {String}: The field (in the database) that represents the data in the column.
 * dir {String}: The direction of the sort (either 'asc' or 'desc').
