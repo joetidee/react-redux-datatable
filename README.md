@@ -24,8 +24,10 @@ Provides information about how the table should be sorted when it is initially r
 * dir **_(String)_**: The direction of the sort (either 'asc' or 'desc').
 
 
+
 ```fetchFunction``` **_(Function)_**
 A function that will fetch data to pass to the Data Table. Must return a Promise.
+
 
 
 ```tableClass``` **_(String)_**
