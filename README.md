@@ -15,20 +15,23 @@ let MyTable = DataTableWrapper("someUniqueName");
 
 ## Props
 
-```defaultColumnSorting```
-**_{Object}_** Provides information about how the table should be sorted when it is initially rendered. Options:
+```defaultColumnSorting``` **_{Object}_**
+
+Provides information about how the table should be sorted when it is initially rendered. Options:
 * index {Interger}: A zero-based index of the column number.
 * field {String}: The field (in the database) that represents the data in the column.
 * dir {String}: The direction of the sort (either 'asc' or 'desc').
 
-```fetchFunction```
-**_{Function}_** A function that will fetch data to pass to the Data Table. Must return a Promise.
+```fetchFunction``` **_{Function}_**
+
+A function that will fetch data to pass to the Data Table. Must return a Promise.
 
 ```refetch```
 Accepts a unique key. The DataTable component will check for this prop and if the value changes it will force a re-fetch of data.
 
-```tableClass```
-**_{String}_** A CSS class name that will be added to the rendered table.
+```tableClass``` **_{String}_**
+
+A CSS class name that will be added to the rendered table.
 
 ## Helper Functions
 ### guid()
