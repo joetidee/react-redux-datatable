@@ -16,7 +16,6 @@ let MyTable = DataTableWrapper("someUniqueName");
 ## Props
 
 ```defaultColumnSorting``` **_{Object}_**
-
 Provides information about how the table should be sorted when it is initially rendered. Options:
 * index {Interger}: A zero-based index of the column number.
 * field {String}: The field (in the database) that represents the data in the column.
@@ -24,12 +23,10 @@ Provides information about how the table should be sorted when it is initially r
 
 
 ```fetchFunction``` **_{Function}_**
-
 A function that will fetch data to pass to the Data Table. Must return a Promise.
 
 
 ```tableClass``` **_{String}_**
-
 A CSS class name that will be added to the rendered table.
 
 ## Helper Functions
