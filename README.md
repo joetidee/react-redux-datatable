@@ -7,7 +7,7 @@ This is currently still in production.
 ```
 import DataTableWrapper from 'DataTableWrapper.jsx';
 let MyTable = DataTableWrapper("someUniqueName");
-...
+...js
 <MyTable ... />
 ...
 ```
@@ -17,9 +17,9 @@ let MyTable = DataTableWrapper("someUniqueName");
 
 ```defaultColumnSorting```
 {Object} Provides information about how the table should be sorted when it is initially rendered. Options:
-index {Interger}: A zero-based index of the column number.
-field {String}: The field (in the database) that represents the data in the column.
-dir {String}: The direction of the sort (either 'asc' or 'desc').
+* index {Interger}: A zero-based index of the column number.
+* field {String}: The field (in the database) that represents the data in the column.
+* dir {String}: The direction of the sort (either 'asc' or 'desc').
 
 ```fetchFunction```
 {Function} A function that will fetch data to pass to the Data Table. Must return a Promise.
