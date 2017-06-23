@@ -17,6 +17,15 @@ let MyTable = DataTableWrapper("someUniqueName");
 
 ## Props
 
+```columnConfig``` **_(Array of Objects)_**
+Provides information about the data stored in each column. Each column is represented by an Object with the following properties:
+* className **_(String)_**: The CSS class name to apply to each table cell of this column.
+* content **_(String)_**: The content of the column header cell.
+* dbField **_(String)_**: The name of the field (in the database) that the column matches to.
+* dbSearchField **_(String)_**: If a search field is used with the table to filter the data, this refers to the name of the field (in the database) that the search facility will use.
+* sorting **_(Boolean)_**: Enable/disable sorting on the table column.
+* style **_(Object)_**: Inline CSS styles to be applied to each cell of this column.
+
 ```defaultColumnSorting``` **_(Object)_**
 Provides information about how the table should be sorted when it is initially rendered.
 * index **_(Interger)_**: A zero-based index of the column number.
