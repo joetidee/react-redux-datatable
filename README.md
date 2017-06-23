@@ -15,6 +15,11 @@ let MyTable = DataTableWrapper("someUniqueName");
 `DataTableWrapper` is higher order component(HOC) that will return a component, in this case "MyTable". Therefore, you can then use `<MyTable />` in your component and pass whatever props you need (see below). You can create as many datatables as you need and they will behave independently of each other.
 
 
+## Managing the datatabled in Redux
+
+Simply add a `dataTables` Object to the root of your store, e.g. `dataTables: {}`.
+
+
 ## Props
 
 ```columnConfig``` **_(Array of Objects)_**
