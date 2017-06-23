@@ -53,7 +53,7 @@ Provides information about how the table should be sorted when it is initially r
 * dir **_(String)_**: The direction of the sort (either 'asc' or 'desc').
 
 ```dataFetchFunction``` **_(Function)_**
-A function that will fetch data to pass to the Data Table. Must return a Promise.
+A function that will fetch data to pass to the Data Table. It receives the `queryParams` object as its first argument. This function must return a Promise.
 
 ```renderRow``` **_(Function)_**
 A function that will process each row of data returned by the `dataFetchFunction`. The `renderRow` function will be supplied with an Object that will represent the row data and should return an Object:
